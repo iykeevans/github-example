@@ -3,9 +3,217 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Not My Doc Title</title>
   </head>
+
   <body>
-    Welcome to VSCODE
+    <h1>Main Heading</h1>
+    <h2>This is heading two</h2>
+    <h3>Sub-subheading</h3>
+    <h4>Sub-sub-subheading</h4>
+    <h5>Lower level heading</h5>
+    <h6>Lowest level heading</h6>
+
+    <p>This is a paragraph of text.</p>
+    <p>This is another paragraph.</p>
+
+    <p>
+      Line one <br />
+      Line two
+    </p>
+    <!-- <br> creates line breaks within paragraphs -->
+
+    <strong>Important text</strong> <b>Bold text</b> <em>Emphasized text</em>
+    <i>Italic text</i>
+
+    <div>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+
+      <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+    </div>
+
+    <div>
+      <a href="https://www.example.com">Visit Example</a>
+
+      <!-- Absolute URLs: Full path including protocol and domain -->
+      <a
+        href="https://jiji.ng/ikeja/computer-accessories/dell-20v-3-25a-laptop-charger-65w-usb-c-with-power-cord-aTBxUFQ7KGi2dFcQHGHMMsNB.html?page=1&pos=2&cur_pos=2&ads_per_page=26&lid=r-gK-tkuYrOVb1GqPs&indexPosition=1"
+        target="_blank"
+        title="More information"
+        >External Link</a
+      >
+
+      <!-- Relative URLs: Path relative to current page -->
+      <a href="about.html">About Us</a>
+
+      <a href="mailto:contact@example.com"> Email Us </a>
+
+      <a href="tel:+1234567890"> Call Us </a>
+    </div>
+
+    <br />
+
+    <table style="border-collapse: collapse">
+      <tr>
+        <th style="border: 1px solid">Name</th>
+        <th style="border: 1px solid">Age</th>
+        <th style="border: 1px solid">Gender</th>
+      </tr>
+
+      <tr>
+        <td style="border: 1px solid">John</td>
+        <td style="border: 1px solid">25</td>
+        <td style="border: 1px solid">Male</td>
+      </tr>
+
+      <tr>
+        <td style="border: 1px solid">Jane</td>
+        <td style="border: 1px solid">30</td>
+        <td style="border: 1px solid">Female</td>
+      </tr>
+    </table>
+
+    <div>
+      <!-- Basic syntax -->
+      <!-- <img
+      src="https://images.unsplash.com/photo-1682687220067-dced9a881b56?q=80&w=2575&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      alt="Description of image"
+      width="500"
+      height="300"
+    />
+
+  
+    <img
+      src="./assets/images/image-1.avif"
+      alt="Description"
+      width="300"
+      height="300"
+    />
+    -->
+
+      <!-- <img
+      src="./assets/images/image-1.avif"
+      alt="Description"
+      style="max-width: 100%; height: auto"
+    /> -->
+    </div>
+
+    <header>Site header</header>
+    <nav>Navigation menu</nav>
+
+    <main>
+      <article>Main content</article>
+      <aside>Related info</aside>
+    </main>
+
+    <footer>Site footer</footer>
+
+    <!-- This is a comment -->
+
+    <!-- 
+      Multi-line
+      comment
+      A 
+      Comment
+    -->
+
+    <p>This is visible content</p>
+    <!-- This comment explains the paragraph -->
+
+    <!-- <picture>
+      <source
+        media="(min-width: 1024px)"
+        srcset="./assets/images/1024x400.svg"
+      />
+
+      <source
+        media="(min-width: 600px)"
+        srcset="https://placehold.co/600x300?text=Medium+Image"
+      />
+
+      <img
+        src="https://placehold.co/300x200?text=Small+Image"
+        alt="Responsive image example"
+      />
+    </picture> -->
+
+    <!-- <audio controls>
+      <source src="./assets/audio/file_example_MP3_700KB.mp3" />
+    </audio>
+
+    <video controls>
+      <source
+        src="./assets/video/big_buck_bunny_720p_1mb.mp4"
+        type="video/mp4"
+      />
+    </video> -->
+
+    <form>
+      <label for="email">Email</label>
+      <br />
+      <input id="email" type="email" placeholder="Enter your email" required />
+      <br />
+      <label for="password">Password</label>
+      <br />
+      <input
+        id="password"
+        type="password"
+        placeholder="Enter your password"
+        required
+      />
+      <br />
+
+      <label for="confirm-password">Confirm Password</label>
+      <br />
+      <input
+        id="confirm-password"
+        type="password"
+        placeholder="Confirm your password"
+        required
+      />
+
+      <br />
+
+      <label>Gender </label>
+      <br />
+
+      <span>
+        Male
+
+        <input type="radio" name="gender" id="" value="male" />
+      </span>
+
+      <span>
+        Female
+
+        <input type="radio" name="gender" id="" value="Female" />
+      </span>
+
+      <br />
+
+      <label for="country">Country</label>
+      <br />
+      <select id="country" name="country">
+        <option value="nigeria">Nigeria</option>
+        <option value="ghana">Ghana</option>
+        <option value="kenya">Kenya</option>
+        <option value="south-africa">South Africa</option>
+      </select>
+
+      <div>
+        <input type="checkbox" id="terms" name="terms" value="agree" required />
+        <label for="terms">I agree to the terms and conditions</label>
+      </div>
+
+      <button>Sign up</button>
+    </form>
   </body>
 </html>
